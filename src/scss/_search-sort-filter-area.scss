@@ -1,0 +1,20 @@
+.search-sort-filter-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.options-area {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+#search-bar {
+    width: 50vw;
+}

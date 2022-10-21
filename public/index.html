@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Basic shopping site</h1>
+
+        <div class="search-sort-filter-area">
+            <form id="search-input">
+                <input type="text" placeholder="Search" id="search-bar" name="search-bar">
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <div class="options-area">
+                <div class="sort-area">
+                    <label for="sort-by">Sort by</label>
+                    <select name="sort-by" id="sort-by">
+                        <option value="">Choose an option</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                        <option value="price-lowest">Price: lowest first</option>
+                        <option value="price-highest">Price: highest first</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+                <div class="filter-area">
+
+                    <span>Filter by</span>
+                    <select name="category" id="category-filter">
+                        <option value="">Category</option>
+                    </select>
+                    <select name="rating" id="rating-filter">
+                        <option value="">Rating</option>
+                        <option value="1">1 &#9733; and above</option>
+                        <option value="2">2 &#9733; and above</option>
+                        <option value="3">3 &#9733; and above</option>
+                        <option value="4">4 &#9733; and above</option>
+                    </select>
+                </div>
+
+            </div>
+            <button id="reset" class="reset-btn">Reset all options</button>
+        </div>
+        <p class="result-display">Found <span id="result-count"></span> results.</p>
+
+        <div class="card-section" id="card-section">
+
+        </div>
+
+    </main>
+
+    <script src="./products.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
